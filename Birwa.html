@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birwa Centre – Welcome</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      color: #333;
+    }
+    .intro-card {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .intro-card h1 {
+      color: #0056b3;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .intro-card p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+    }
+    .highlight {
+      color: #d63384;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro-card">
+    <h1>Welcome to Birwa Centre</h1>
+    <p>
+      Nestled in the serene locale of <span class="highlight">Melkar-Panemangalore</span> (Bantwal Taluk, Dakshina Kannada), Birwa Centre is your perfect destination for a stay that blends comfort, convenience and calm. With well-appointed rooms, both A/C and non-A/C, modern amenities, ample parking and a peaceful setting away from city chaos, we make you feel right at home.  
+    </p>
+    <p>
+      Whether you're here for business meetings, family gatherings or a restful getaway, our dedicated team ensures warm hospitality, pure vegetarian and non-vegetarian dining options, a roof-garden, auditorium and versatile event spaces to suit your every need.
+    </p>
+  </div>
+
+  <script>
+    // (Optional) You could add a little dynamic effect if you like:
+    document.addEventListener('DOMContentLoaded', function() {
+      const card = document.querySelector('.intro-card');
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }, 200);
+    });
+  </script>
+
+</body>
+</html>
